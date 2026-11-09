@@ -300,7 +300,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 .plan.feat{animation:featglow 4s ease-in-out infinite;border-color:rgba(255,200,140,.7);box-shadow:inset 0 1px 0 rgba(255,255,255,.3),inset 0 0 40px rgba(245,132,30,.25),0 0 0 1px rgba(245,132,30,.35),0 0 60px -10px rgba(245,132,30,.55),0 40px 80px -40px rgba(0,0,0,.7)}
 .plan .badge{position:absolute;top:-13px;left:28px;background-size:200% auto!important;animation:flow 4s linear infinite;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:999px;background:var(--sunrise-flow);color:#1a0d02;font-weight:600}
 .plan-name{font-family:var(--display);font-size:24px;font-weight:600}
-.plan-for{color:var(--slate);font-size:14.5px;margin-top:4px;min-height:3.2em}
+.plan-for{color:var(--slate);font-size:14.5px;margin-top:4px;min-height:4.8em}
 .price{font-family:var(--display);font-weight:700;font-size:clamp(40px,4.4vw,54px);letter-spacing:-.035em;line-height:1;font-variant-numeric:tabular-nums;display:flex;align-items:baseline;gap:4px;flex-wrap:wrap}
 .price small{font-size:18px;font-weight:500;color:var(--slate);letter-spacing:0}
 .price-note{font-size:13px;color:var(--slate);font-family:var(--mono);margin-top:6px;min-height:1.4em}
@@ -316,6 +316,11 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 .addon{margin-top:20px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:20px 24px;border-radius:24px;background:rgba(28,35,51,.55);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
 .addon p{color:var(--slate);font-size:15px;max-width:70ch}
 .addon b{color:var(--mist)}
+.term{font-size:13px;font-weight:600;color:var(--amber);margin-top:4px}
+.addon-copy{display:grid;gap:10px;min-width:0;flex:1 1 520px}
+.addon-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.addon-list li{font-size:14px;color:var(--mist);padding:8px 12px;border-radius:999px;background:var(--glass-hi);border:1px solid var(--line)}
+.addon-list span{color:var(--amber);margin-left:6px;font-weight:500}
 .price-fine{margin-top:16px;font-size:12.5px;color:var(--slate-2);text-align:center}
 @media (max-width:980px){.plans{grid-template-columns:1fr;max-width:520px;margin-inline:auto}.plan-for{min-height:0}}
 
@@ -653,18 +658,19 @@ footer{border-top:1px solid var(--line);padding-block:40px;color:var(--slate-2);
       <article class="plan rv">
         <div>
           <h3 class="plan-name">Starter</h3>
-          <p class="plan-for">Get online properly and stop missing enquiries. Live in days.</p>
+          <p class="plan-for">Get online properly and stop missing enquiries. Self-serve, live in days.</p>
         </div>
         <div>
-          <div class="price" data-m="349">R349<small>/mo</small></div>
-          <p class="price-note" data-note-m="No setup fee" data-note-y="R3,490 billed yearly">No setup fee</p>
+          <div class="price" data-m="499">R499<small>/mo</small></div>
+          <p class="price-note" data-note-m="No setup fee" data-note-y="R4,990 billed yearly · no setup fee">No setup fee</p>
+          <p class="term">Month-to-month · 30 days’ notice</p>
         </div>
         <span class="sr">Includes:</span>
         <ul>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Professional AI-built website, hosting and .co.za domain</li>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Website chat and enquiry form, answered 24/7</li>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Basic SEO and Google Business Profile set-up</li>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Monthly report: enquiries in, sources, response times</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>AI-built website, hosting and .co.za domain</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>24/7 web chat and enquiry form</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Google Business Profile set-up</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Monthly enquiry report: what came in and from where</li>
         </ul>
         <a class="btn btn-light" href="#book">Start with Starter</a>
       </article>
@@ -673,19 +679,19 @@ footer{border-top:1px solid var(--line);padding-block:40px;color:var(--slate-2);
         <span class="badge">Most popular</span>
         <div>
           <h3 class="plan-name">Growth</h3>
-          <p class="plan-for">For businesses ready to win their area and close more of every enquiry.</p>
+          <p class="plan-for">Guided set-up for businesses ready to win their area and close more of every enquiry.</p>
         </div>
         <div>
-          <div class="price" data-m="899">R899<small>/mo</small></div>
-          <p class="price-note" data-note-m="Guided set-up included" data-note-y="R8,990 billed yearly">Guided set-up included</p>
+          <div class="price" data-m="2499">R2,499<small>/mo</small></div>
+          <p class="price-note" data-note-m="+ R3,500 once-off setup" data-note-y="R24,990 billed yearly + R3,500 setup">+ R3,500 once-off setup</p>
+          <p class="term">6-month minimum term</p>
         </div>
         <span class="sr">Includes:</span>
         <ul>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Everything in Starter</li>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Local SEO to rank in your suburb and city</li>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>WhatsApp enquiries answered, qualified and booked</li>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Every enquiry tracked in Zoho CRM with follow-up reminders</li>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Zoho Mail on your domain and automatic review requests</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Everything in Starter, plus local SEO</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>WhatsApp AI that answers, qualifies and books</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Zoho CRM and Zoho Mail on your domain</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Automatic review requests after every job</li>
         </ul>
         <a class="btn btn-primary" href="#book">Choose Growth</a>
       </article>
@@ -693,30 +699,39 @@ footer{border-top:1px solid var(--line);padding-block:40px;color:var(--slate-2);
       <article class="plan rv">
         <div>
           <h3 class="plan-name">Professional</h3>
-          <p class="plan-for">The full practice-in-a-box for firms, practices and stores with high-value customers.</p>
+          <p class="plan-for">Done for you. The full customer-acquisition engine for firms, practices and stores with high-value clients.</p>
         </div>
         <div>
-          <div class="price" data-m="5000">R5,000<small>/mo</small></div>
-          <p class="price-note" data-note-m="+ R20,000 once-off build" data-note-y="R50,000 yearly + R20,000 build">+ R20,000 once-off build</p>
+          <div class="price" data-m="8500">R8,500<small>/mo</small></div>
+          <p class="price-note" data-note-m="+ R20,000 once-off setup" data-note-y="R85,000 billed yearly + R20,000 setup">+ R20,000 once-off setup</p>
+          <p class="term">12-month minimum term</p>
         </div>
         <span class="sr">Includes:</span>
         <ul>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Custom website designed to convert, full SEO and AI visibility</li>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>WhatsApp and AI assistant with booking and payments</li>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Zoho CRM, Mail and Books, set up and run for you</li>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Compliant marketing for regulated professions</li>
-          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Dedicated growth manager and monthly results review</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Custom website, full SEO and AI visibility</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Paid ads managed for you (ad budget from R4,000/mo, paid separately)</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Zoho CRM, Mail and Books, plus online bookings</li>
+          <li><span class="tick"><svg viewBox="0 0 12 12" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M2.5 6.2l2.3 2.3 4.7-5"/></svg></span>Dedicated growth manager and compliant marketing for regulated professions</li>
         </ul>
-        <div class="guarantee"><b>Results guarantee</b>10 qualified new client opportunities in your first 90 days, or we keep working at no fee until you have them.</div>
+        <div class="guarantee"><b>Results guarantee</b>10 qualified leads in your first 90 days, or we keep working at no fee until you have them.</div>
         <a class="btn btn-light" href="#book">Book a growth call</a>
       </article>
     </div>
 
     <div class="addon rv">
-      <p><b>Connectivity add-on.</b> Add a CircleTel data SIM, capped data and a pocket MiFi router to any plan, so your business stays online wherever the work is.</p>
-      <a class="btn btn-ghost" href="#book">Ask about connectivity</a>
+      <div class="addon-copy">
+        <p><b>Add-ons</b></p>
+        <ul class="addon-list">
+          <li>Hosting only <span>from R149/mo</span></li>
+          <li>Ads management on Growth <span>+R2,000/mo</span></li>
+          <li>Extra Zoho users <span>on request</span></li>
+          <li>CircleTel connectivity <span>data SIM + MiFi</span></li>
+          <li>Multi-branch <span>quoted</span></li>
+        </ul>
+      </div>
+      <a class="btn btn-ghost" href="#book">Ask about add-ons</a>
     </div>
-    <p class="price-fine">Proposed launch pricing. All prices in South African rand, excluding VAT. Multi-branch or international? We'll scope it with you.</p>
+    <p class="price-fine">After the minimum term, every plan runs month-to-month with 30 days’ notice. Pay a year upfront and get 2 months free. All prices in South African rand, excluding VAT.</p>
   </div>
 </section>
 
@@ -774,33 +789,33 @@ footer{border-top:1px solid var(--line);padding-block:40px;color:var(--slate-2);
       title:'You are losing customers to whoever replies first.',
       diag:'When an enquiry waits until morning, most people have already booked elsewhere. The fix is making sure every call, chat and WhatsApp gets a real answer within a minute, day or night.',
       steps:[['Answer in seconds','WhatsApp and web chat replies 24/7, plus a text-back for every missed call.'],['Qualify and book','Ask the right questions, then book the appointment straight into your diary.'],['Follow up to close','Every enquiry lands in Zoho CRM with reminders until it turns into a sale.']],
-      plan:'Growth', price:'R899/mo' },
+      plan:'Growth', price:'R2,499/mo' },
     { k:/google|seo|found|find us|search|visib|rank|traffic|online|website|map/i,
       title:'Customers are searching. They just aren\'t finding you.',
       diag:'If you are not on page one or in the map pack, your competitors get the calls by default. We make you the obvious choice where people look, including AI assistants.',
       steps:[['Get found','Local SEO, Google Business Profile and AI visibility for your services and area.'],['Win trust','A fast site with reviews, proof and one clear next step.'],['Answer in seconds','New visitors get instant replies so the traffic turns into bookings.']],
-      plan:'Growth', price:'R899/mo' },
+      plan:'Growth', price:'R2,499/mo' },
     { k:/cold|follow|forget|convert|close|quote|sales|pipeline|lost/i,
       title:'The enquiries are there. The follow-up isn\'t.',
       diag:'Most sales are won on the second to fifth touch, and most businesses stop after one. We put every enquiry in one pipeline and let the system chase so you don\'t have to.',
       steps:[['One pipeline','Every enquiry from every channel in Zoho CRM, nothing lost in WhatsApp.'],['Automatic nudges','Reminders, quote follow-ups and check-ins sent on schedule.'],['See what works','Know which source brings paying customers, not just clicks.']],
-      plan:'Growth', price:'R899/mo' },
+      plan:'Growth', price:'R2,499/mo' },
     { k:/admin|invoice|booking|schedul|manual|spreadsheet|paperwork|time|busy|automat/i,
       title:'You are spending selling time on admin.',
       diag:'Quotes, bookings, reminders and invoices can run themselves. That gives you back hours every week and makes every customer feel looked after.',
       steps:[['Automate bookings','Customers pick a slot, get reminders, and show up prepared.'],['Quotes to invoices','Zoho CRM and Zoho Books connected, so a won deal becomes an invoice automatically.'],['One bill, one partner','Website, email, CRM and finance tools run by CircleTel.']],
-      plan:'Professional', price:'R5,000/mo' },
+      plan:'Professional', price:'R8,500/mo' },
     { k:/review|repeat|come back|referr|loyal|retention|rebook/i,
       title:'Your best customers aren\'t bringing you new ones.',
       diag:'Happy customers rarely leave reviews or refer unless you ask at the right moment. We automate the ask, so every good job turns into social proof and referrals.',
       steps:[['Review requests','Sent after every job, routed to Google where they help you rank.'],['Rebooking','Timely reminders that bring customers back.'],['Referral asks','A simple way for happy clients to send friends your way.']],
-      plan:'Growth', price:'R899/mo' }
+      plan:'Growth', price:'R2,499/mo' }
   ];
   var fallback = {
     title:'Here is where we would start.',
     diag:'Every business leaks customers somewhere between the first search and the first payment. On a growth call we map your journey and fix the biggest leak first.',
     steps:[['Find the leak','We check how you are found, how fast you reply and how you follow up.'],['Fix the biggest gap','We build the stage that will add the most paying customers soonest.'],['Run it for you','We operate the system and report new customers won each month.']],
-    plan:'Growth', price:'R899/mo'
+    plan:'Growth', price:'R2,499/mo'
   };
   var form = document.getElementById('ask'), input = document.getElementById('ask-input'), out = document.getElementById('answer');
   function el(tag, cls, text){ var e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
