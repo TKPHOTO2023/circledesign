@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>CircleDesign by CircleTel</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="CircleDesign by CircleTel. We don't get you leads. We get you paying customers. Websites, AI automation and growth systems for South African SMEs and beyond.">
+<meta name="description" content="CircleDesign by CircleTel: AI-driven lead generation and customer acquisition for SMEs in South Africa and worldwide. We don't get you leads. We get you paying customers.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
@@ -144,6 +144,16 @@ section{position:relative}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 .trust{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;margin-top:40px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--slate-2)}
 .trust span::before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--orange);margin-right:10px;vertical-align:middle}
+
+/* ---------- KEYWORD MARQUEE ---------- */
+.marquee{overflow:hidden;border-top:1px solid var(--line);padding-block:18px;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee-track{display:flex;width:max-content;animation:marq 40s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee ul{display:flex;align-items:center;gap:28px;margin:0;padding:0 14px;list-style:none;font-weight:500;font-size:clamp(15px,1.6vw,19px);color:var(--slate);white-space:nowrap}
+.marquee li{display:flex;align-items:center;gap:28px}
+.marquee li::after{content:"";width:7px;height:7px;border-radius:50%;background:var(--sunrise);box-shadow:0 0 10px rgba(245,132,30,.8)}
+.marquee li.hot{color:var(--mist);font-weight:600}
+@keyframes marq{to{transform:translateX(-50%)}}
 
 /* ---------- STRIKE BAND ---------- */
 .band{border-block:1px solid var(--line);background:linear-gradient(180deg,rgba(28,35,51,.5),rgba(12,16,32,0))}
@@ -348,7 +358,7 @@ footer{border-top:1px solid var(--line);padding-block:40px;color:var(--slate-2);
   <div class="grain" aria-hidden="true"></div>
   <div class="horizon" aria-hidden="true"></div>
   <div class="wrap hero-inner">
-    <span class="pill"><span class="dot" aria-hidden="true"></span><b>CircleDesign</b> South Africa's digital enablement partner</span>
+    <span class="pill"><span class="dot" aria-hidden="true"></span><b>CircleDesign</b> AI-driven lead generation &amp; customer acquisition</span>
 
     <h1>Get more <span class="grad">customers.</span></h1>
 
@@ -357,7 +367,7 @@ footer{border-top:1px solid var(--line);padding-block:40px;color:var(--slate-2);
       We get you <span class="grad">paying customers.</span>
     </p>
 
-    <p class="hero-sub">You take care of your customers. <strong>Let us worry about getting them.</strong> Websites, search, WhatsApp, follow-up and CRM, built and run as one system that turns strangers into buyers.</p>
+    <p class="hero-sub">You take care of your customers. <strong>Let us worry about getting them.</strong> AI-driven lead generation and customer acquisition, built and run as one system: websites, search, WhatsApp, automated follow-up and CRM that turn strangers into buyers.</p>
 
     <form class="ask" id="ask" autocomplete="off">
       <div class="ask-box">
@@ -397,6 +407,11 @@ footer{border-top:1px solid var(--line);padding-block:40px;color:var(--slate-2);
   </div>
 </section>
 
+<!-- ============ KEYWORD MARQUEE ============ -->
+<div class="marquee" aria-label="What we do: AI-driven lead generation, customer acquisition, conversion optimisation, WhatsApp automation, local SEO, AI search visibility, AI sales automation, CRM and pipeline management, automated follow-up, review generation, revenue growth">
+  <div class="marquee-track" aria-hidden="true"><ul><li class="hot">AI-driven lead generation</li><li class="hot">Customer acquisition</li><li>Conversion optimisation</li><li>WhatsApp automation</li><li>Local SEO</li><li>AI search visibility</li><li class="hot">AI sales automation</li><li>CRM &amp; pipeline management</li><li>Automated follow-up</li><li>Review generation</li><li>Revenue growth</li></ul><ul><li class="hot">AI-driven lead generation</li><li class="hot">Customer acquisition</li><li>Conversion optimisation</li><li>WhatsApp automation</li><li>Local SEO</li><li>AI search visibility</li><li class="hot">AI sales automation</li><li>CRM &amp; pipeline management</li><li>Automated follow-up</li><li>Review generation</li><li>Revenue growth</li></ul></div>
+</div>
+
 <!-- ============ STRIKE BAND ============ -->
 <section class="band sec">
   <div class="wrap band-grid">
@@ -408,7 +423,7 @@ footer{border-top:1px solid var(--line);padding-block:40px;color:var(--slate-2);
     </div>
     <div class="band-copy rv">
       <p>Voice agents and chatbots are tools. You don't need more tools. You need customers.</p>
-      <p>Every agency in the country is selling AI. We use it too, along with websites, search, WhatsApp and CRM, but it all sits on our side of the counter. You never have to manage it, learn it or wonder if it's working.</p>
+      <p>Every agency in the country is selling AI. We use it too: AI-driven lead generation fills your pipeline, and AI-powered follow-up turns it into sales. But it all sits on our side of the counter. You never have to manage it, learn it or wonder if it's working.</p>
       <p>What you buy from us is the result, and we measure ourselves on the one number that matters to you: <strong style="color:var(--mist)">new paying customers each month.</strong></p>
     </div>
   </div>
@@ -418,7 +433,7 @@ footer{border-top:1px solid var(--line);padding-block:40px;color:var(--slate-2);
 <section class="sec" id="leak">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="eyebrow">The real problem</span>
+      <span class="eyebrow">Why lead generation alone fails</span>
       <h2>Most businesses don't have a lead problem. <span class="grad">They have a leak.</span></h2>
       <p>Customers are already looking for what you sell. Somewhere between their first search and their first payment, most of them quietly slip away to someone else.</p>
     </div>
@@ -469,9 +484,9 @@ footer{border-top:1px solid var(--line);padding-block:40px;color:var(--slate-2);
   <div class="wrap">
     <div class="engine-top">
       <div class="sec-head rv">
-        <span class="eyebrow">How it works</span>
+        <span class="eyebrow">AI-driven customer acquisition, step by step</span>
         <h2>The Customer Engine: <span class="grad">five stages, one system.</span></h2>
-        <p>Getting found is only the start. Paying customers come from what happens next, so we build every stage from first search to repeat sale, connect them, and run them for you.</p>
+        <p>Lead generation is only the start. Customer acquisition is what happens next, so we build every stage from first search to repeat sale, connect them, and run them for you.</p>
       </div>
 
       <div class="feed rv" id="feed" aria-label="Example: one enquiry handled by the engine">
@@ -559,7 +574,7 @@ footer{border-top:1px solid var(--line);padding-block:40px;color:var(--slate-2);
 <section class="sec" id="industries" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head rv">
-      <span class="eyebrow">Who we serve</span>
+      <span class="eyebrow">Customer acquisition for your industry</span>
       <h2>Built for businesses where <span class="grad">one new customer changes the month.</span></h2>
       <p>We start with the professions where a single new client is worth thousands, then bring the same engine to every SME that sells.</p>
     </div>
@@ -617,7 +632,7 @@ footer{border-top:1px solid var(--line);padding-block:40px;color:var(--slate-2);
   <div class="wrap">
     <div class="price-head">
       <div class="sec-head rv">
-        <span class="eyebrow">Plans</span>
+        <span class="eyebrow">AI-driven growth plans</span>
         <h2>Priced against the value of a customer, <span class="grad">not a website.</span></h2>
       </div>
       <button class="toggle" id="billing" role="switch" aria-checked="false" type="button">
@@ -702,7 +717,7 @@ footer{border-top:1px solid var(--line);padding-block:40px;color:var(--slate-2);
   <div class="wrap final-inner">
     <span class="eyebrow">Your next customer is searching right now</span>
     <h2>Let's make sure they find you, <span class="grad">and pay you.</span></h2>
-    <p>Book a 30-minute growth call. We'll look at where your customers come from, show you where they're leaking, and tell you exactly what we'd fix first.</p>
+    <p>Book a 30-minute growth call about AI-driven lead generation and customer acquisition for your business. We'll look at where your customers come from, show you where they're leaking, and tell you exactly what we'd fix first.</p>
     <div class="final-actions">
       <a class="btn btn-primary" href="#book">Book a growth call</a>
       <a class="btn btn-ghost" href="#ask-input" id="to-ask">Describe your problem first</a>
@@ -723,7 +738,7 @@ footer{border-top:1px solid var(--line);padding-block:40px;color:var(--slate-2);
       <a href="#pricing">Pricing</a>
       <a href="#book">Contact</a>
     </nav>
-    <span>© 2026 CircleTel. South Africa's digital enablement partner.</span>
+    <span>© 2026 CircleTel. AI-driven lead generation and customer acquisition from South Africa's digital enablement partner.</span>
   </div>
 </footer>
 
